@@ -35,3 +35,12 @@ let strLength: number = (someValue as string).length;
 "Hello World!".substr(3,7)   //lo Worl
 "Hello World!".substring(3,7)   //lo Wo
 ```
+* 接口：可选属性和只读属性
+** 带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个?符号。
+** 可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。
+```
+interface SquareConfig {
+  color?: string;
+  width?: number;
+}
+```
