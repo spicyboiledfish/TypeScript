@@ -1,7 +1,8 @@
 # TypeScript
 对TypeScript的学习及应用在React Native中...
+官网地址：https://www.tslang.cn/docs/handbook/basic-types.html
 
-## 9.17 基础类型
+## 9.17 基础类型,变量声明，接口
 * 布尔值（boolean）, 数字（number）:支持二进制、八进制、十进制、十六进制，字符串（string）,数组（array），元组（Tuple），枚举（enum）,Any（any）,Void(当函数没有返回值时)，Null和Undefined，Never
    
 ```
@@ -36,8 +37,8 @@ let strLength: number = (someValue as string).length;
 "Hello World!".substring(3,7)   //lo Wo
 ```
 * 接口：可选属性和只读属性
-** 带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个?符号。
-** 可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。
+#### 带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个?符号。
+#### 可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。
 ```
 interface SquareConfig {
   color?: string;
