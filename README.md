@@ -13,6 +13,9 @@ let list2:Array<number> = [2,3,4];  //数组
 
 let x:[string, number];    //元组（第一个为字符串，第二个数字）
 
+enum Color {Red = 1, Green, Blue}  //枚举
+let c: Color = Color.Green;   
+
 
 ```
 * substr 和substring的区别：
