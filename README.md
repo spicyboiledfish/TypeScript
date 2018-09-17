@@ -16,6 +16,13 @@ let x:[string, number];    //元组（第一个为字符串，第二个数字）
 enum Color {Red = 1, Green, Blue}  //枚举
 let c: Color = Color.Green;   
 
+let someValue: any = "this is a string";
+
+let strLength: number = (<string>someValue).length;
+
+let strLength: number = (someValue as string).length;
+
+
 
 ```
 * substr 和substring的区别：
