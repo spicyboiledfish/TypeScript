@@ -57,5 +57,13 @@ let mySquare = createSquare({ width: 100, opacity: 0.5 } as SquareConfig);
 * readOnly 和 const区别
   最简单判断该用readonly还是const的方法是看要把它做为变量使用还是做为一个属性。 做为变量使用的话用 const，若做为属性则使用readonly。
 
+* search方法： 查找字符串中的子字符串的下标
+```
+var str="Visit Runoob!"; 
+var n=str.search("Runoob"); //6
+所以若存在子字符串，n>-1; 否则n=-1
+
+```
+
   
   
